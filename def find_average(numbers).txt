@@ -1,0 +1,15 @@
+def find_average(numbers):
+    if not numbers:  # Перевірка, чи список не пустий
+        return None
+    
+    total_sum = 0
+    for num in numbers:
+        total_sum += num
+    
+    average = total_sum / len(numbers)
+    return average
+
+# Приклад використання функції
+my_list = [2, 4, 6, 8, 10]
+result = find_average(my_list)
+print(f"Середнє значення списку: {result}")
